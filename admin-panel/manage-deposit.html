@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Deposits - SKR INTERNATIONAL</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <h2>SKR INTERNATIONAL Admin</h2>
+
+    <nav>
+        <a href="admin-dashboard.html">Dashboard</a>
+    </nav>
+
+</header>
+
+<section class="admin-section">
+
+    <h1>Manage Deposits</h1>
+
+    <p>Total Deposits:
+        <span id="totalDeposits">0</span>
+    </p>
+
+    <input
+        type="text"
+        id="searchDeposit"
+        placeholder="Search Deposit..."
+    >
+
+    <br><br>
+
+    <table id="depositTable">
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>Amount</th>
+                <th>Method</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>001</td>
+                <td>Ali Khan</td>
+                <td>Rs. 5,000</td>
+                <td>JazzCash</td>
+                <td>22-07-2026</td>
+                <td>Pending</td>
+
+                <td>
+                    <button class="approve-btn">
+                        Approve
+                    </button>
+
+                    <button class="reject-btn">
+                        Reject
+                    </button>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>002</td>
+                <td>Ahmed</td>
+                <td>Rs. 10,000</td>
+                <td>EasyPaisa</td>
+                <td>22-07-2026</td>
+                <td>Pending</td>
+
+                <td>
+                    <button class="approve-btn">
+                        Approve
+                    </button>
+
+                    <button class="reject-btn">
+                        Reject
+                    </button>
+                </td>
+
+            </tr>
+                      <tr>
+
+                <td>003</td>
+                <td>Usman</td>
+                <td>Rs. 7,500</td>
+                <td>Bank Transfer</td>
+                <td>22-07-2026</td>
+                <td>Pending</td>
+
+                <td>
+                    <button class="approve-btn">
+                        Approve
+                    </button>
+
+                    <button class="reject-btn">
+                        Reject
+                    </button>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>004</td>
+                <td>Bilal</td>
+                <td>Rs. 15,000</td>
+                <td>JazzCash</td>
+                <td>22-07-2026</td>
+                <td>Pending</td>
+
+                <td>
+                    <button class="approve-btn">
+                        Approve
+                    </button>
+
+                    <button class="reject-btn">
+                        Reject
+                    </button>
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<script src="../js/manage-deposits.js"></script>
+
+</body>
+</html>
