@@ -1,92 +1,101 @@
-/* ==========================================
+/* ===================================
    SKR INTERNATIONAL
    Navbar.css
-========================================== */
+=================================== */
 
-/* Navbar */
 .navbar{
     width:100%;
     background:#0d6efd;
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
 .navbar .container{
+    max-width:1200px;
+    margin:auto;
+    padding:12px 15px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 0;
+    flex-wrap:wrap;
 }
 
-/* Logo */
 .logo{
-    font-size:28px;
-    font-weight:700;
-    color:#fff;
-    letter-spacing:1px;
-}
-
-/* Navigation */
-.nav-links{
     display:flex;
     align-items:center;
-    gap:20px;
+    text-decoration:none;
 }
 
-.nav-links li{
-    list-style:none;
+.logo img{
+    width:45px;
+    height:45px;
+    margin-right:10px;
 }
 
-.nav-links a{
+.logo span{
     color:#fff;
-    font-size:16px;
-    font-weight:500;
-    padding:8px 12px;
-    border-radius:5px;
-    transition:0.3s;
+    font-size:24px;
+    font-weight:bold;
 }
 
-.nav-links a:hover,
-.nav-links a.active{
-    background:#fff;
-    color:#0d6efd;
-}
-
-/* Login & Register Buttons */
-.nav-btn{
-    padding:8px 18px;
-    border:2px solid #fff;
-    border-radius:5px;
-    color:#fff;
-    transition:0.3s;
-}
-
-.nav-btn:hover{
-    background:#fff;
-    color:#0d6efd;
-}
-
-/* Mobile Menu Icon */
-@media (max-width:768px){
-
-.menu-toggle{
-    display:block;
-    font-size:30px;
-    color:#fff;
-}
-
-.nav-links{
-    display:none;
-    flex-direction:column;
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-}
-
-.nav-links.active{
+.nav-icons{
     display:flex;
+    gap:18px;
+    align-items:center;
+}
+
+.nav-icons a{
+    text-decoration:none;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-icons a:hover{
+    color:#ffd700;
+    transform:translateY(-3px);
+}
+
+.nav-icons a{
+    font-size:22px;
+}
+
+.nav-icons a span{
+    font-size:12px;
+    margin-top:4px;
+}
+
+@media(max-width:768px){
+
+.navbar .container{
+    flex-direction:column;
+}
+
+.logo{
+    margin-bottom:15px;
+}
+
+.nav-icons{
+    width:100%;
+    justify-content:space-around;
+    gap:10px;
+}
+
+.logo span{
+    font-size:20px;
+}
+
+.nav-icons a{
+    font-size:20px;
+}
+
+.nav-icons a span{
+    font-size:11px;
 }
 
 }
