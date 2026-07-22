@@ -76,8 +76,20 @@
     cursor:pointer;
 }
 
-/* Responsive */
 @media(max-width:768px){
 
-.navbar .container{
-    flex
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    display:none;
+}
+
+.nav-links.active{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+}
