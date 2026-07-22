@@ -69,27 +69,24 @@
 }
 
 /* Mobile Menu Icon */
-.menu-toggle{
-    display:none;
-    font-size:28px;
-    color:#fff;
-    cursor:pointer;
-}
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 .menu-toggle{
     display:block;
+    font-size:30px;
+    color:#fff;
 }
 
 .nav-links{
     display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
 }
 
 .nav-links.active{
     display:flex;
-    flex-direction:column;
-    width:100%;
 }
 
 }
