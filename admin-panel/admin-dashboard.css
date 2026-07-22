@@ -1,1 +1,129 @@
+/* =====================================
+   SKR INTERNATIONAL - ADMIN DASHBOARD CSS
+===================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+    background:#f4f7fb;
+}
+
+
+/* Admin Navbar */
+
+.admin-nav{
+    height:70px;
+    background:#111827;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+}
+
+
+.admin-nav h2{
+    font-size:22px;
+}
+
+
+/* Sidebar */
+
+.admin-sidebar{
+    position:fixed;
+    width:250px;
+    height:100vh;
+    background:#0d6efd;
+    padding-top:70px;
+}
+
+
+.admin-sidebar a{
+    display:block;
+    padding:15px 25px;
+    color:white;
+    text-decoration:none;
+}
+
+
+.admin-sidebar a:hover{
+    background:#084298;
+}
+
+
+/* Main Dashboard */
+
+.admin-content{
+    margin-left:250px;
+    padding:30px;
+}
+
+
+/* Dashboard Cards */
+
+.admin-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+
+.admin-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+
+.admin-card h3{
+    color:#0d6efd;
+}
+
+
+.admin-card p{
+    font-size:28px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+
+/* Chart Box */
+
+.chart-box{
+    background:white;
+    margin-top:30px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.admin-sidebar{
+    width:70px;
+}
+
+.admin-sidebar a span{
+    display:none;
+}
+
+.admin-content{
+    margin-left:70px;
+    padding:15px;
+}
+
+}
