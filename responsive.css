@@ -1,1 +1,151 @@
+/* ==========================================
+   SKR INTERNATIONAL
+   Responsive.css
+========================================== */
 
+/* Large Devices */
+@media (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+}
+
+/* Tablets */
+@media (max-width:992px){
+
+.navbar .container{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    min-height:80vh;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.about .container,
+.contact-container{
+    flex-direction:column;
+    grid-template-columns:1fr;
+}
+
+.services-container,
+.team-container,
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.logo{
+    font-size:22px;
+}
+
+.nav-links{
+    flex-direction:column;
+    width:100%;
+    gap:10px;
+}
+
+.hero{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero h2{
+    font-size:20px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn{
+    width:100%;
+}
+
+.slider,
+.slide img{
+    height:280px;
+}
+
+.slide-content h1{
+    font-size:28px;
+}
+
+.slide-content p{
+    font-size:15px;
+}
+
+.services-container,
+.team-container,
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+.contact-form,
+.contact-info{
+    padding:20px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.hero h1{
+    font-size:24px;
+}
+
+.hero h2{
+    font-size:18px;
+}
+
+.hero p{
+    font-size:14px;
+}
+
+.logo{
+    font-size:18px;
+}
+
+.btn{
+    padding:10px;
+    font-size:14px;
+}
+
+}
