@@ -1,1 +1,183 @@
+/* =====================================
+   SKR INTERNATIONAL - WITHDRAW PAGE CSS
+===================================== */
 
+.withdraw-container{
+    padding:30px;
+}
+
+
+/* Heading */
+
+.withdraw-container h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+
+/* Withdraw Box */
+
+.withdraw-box{
+    background:white;
+    max-width:600px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+/* Available Balance */
+
+.withdraw-balance{
+    background:#111827;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+
+.withdraw-balance h3{
+    font-size:18px;
+}
+
+
+.withdraw-balance p{
+    font-size:30px;
+    font-weight:700;
+}
+
+
+/* Form */
+
+.withdraw-form label{
+    display:block;
+    margin-top:15px;
+    font-weight:500;
+}
+
+
+.withdraw-form input,
+.withdraw-form select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+
+.withdraw-form input:focus,
+.withdraw-form select:focus{
+    border-color:#0d6efd;
+}
+
+
+/* Payment Method */
+
+.payment-method{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:15px;
+}
+
+
+.payment-card{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+.payment-card:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+
+/* Button */
+
+.withdraw-btn{
+    width:100%;
+    margin-top:25px;
+    padding:13px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+.withdraw-btn:hover{
+    background:#084298;
+}
+
+
+/* Withdraw History */
+
+.withdraw-history{
+    margin-top:30px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+
+.withdraw-history table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+.withdraw-history th{
+    background:#0d6efd;
+    color:white;
+    padding:12px;
+}
+
+
+.withdraw-history td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* Status */
+
+.completed{
+    color:#059669;
+    font-weight:600;
+}
+
+
+.pending{
+    color:#d97706;
+    font-weight:600;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.withdraw-container{
+    padding:15px;
+}
+
+.withdraw-box{
+    padding:20px;
+}
+
+.payment-method{
+    grid-template-columns:1fr;
+}
+
+}
