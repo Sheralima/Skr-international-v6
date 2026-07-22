@@ -1,1 +1,140 @@
+/* ==========================================
+   SKR INTERNATIONAL
+   Public Website Style.css
+   Part 1
+========================================== */
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Root Colors */
+
+:root{
+    --primary:#0d6efd;
+    --secondary:#084298;
+    --success:#198754;
+    --danger:#dc3545;
+    --warning:#ffc107;
+    --light:#ffffff;
+    --dark:#212529;
+    --gray:#6c757d;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    background:var(--primary);
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.navbar .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:#fff;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd54f;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--secondary);
+}
+
+/* Hero */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("images/banner.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
