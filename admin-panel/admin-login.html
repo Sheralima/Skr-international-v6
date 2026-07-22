@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login - SKR INTERNATIONAL</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h2>SKR INTERNATIONAL</h2>
+
+        <h3>Admin Login</h3>
+
+        <form id="adminLoginForm">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="adminEmail"
+                placeholder="Enter Admin Email"
+                required
+            >
+
+            <br><br>
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Enter Password"
+                required
+            >
+
+            <br><br>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="showPassword"
+                >
+
+                Show Password
+
+            </label>
+
+            <br><br>
+                      <button type="submit" id="loginBtn">
+                Login
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+        </form>
+
+        <br>
+
+        <a href="../index.html">
+            ← Back to Website
+        </a>
+
+    </div>
+
+</div>
+
+<script src="../js/admin-login.js"></script>
+
+</body>
+</html>
