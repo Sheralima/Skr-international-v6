@@ -27,16 +27,22 @@
 <section class="admin-section">
 
 
-<h1>Manage Services</h1>
+<h1><p>Total Services: <span id="totalServices">0</span></p>
+
+<input type="text" id="searchService" placeholder="Search Service">
+
+</h1>
+
+<br><br>
 
 
-<button class="add-btn">
+<button id="addServiceBtn" class="add-btn">
 + Add New Service
 </button>
 
 
 
-<div class="service-card">
+<div class="service-card service-item">
 
 <h3>Business Consulting</h3>
 
@@ -47,10 +53,8 @@ Professional business advice and solutions.
 <span>Status: Active</span>
 
 <br><br>
-
-<button>Edit</button>
-
-<button>Delete</button>
+<button class="edit-service">Edit</button>
+<button class="delete-service">Delete</button>
 
 </div>
 
@@ -65,6 +69,14 @@ Website development and online solutions.
 </p>
 
 <span>Status: Active</span>
+
+<br><p>Total Services: <span id="totalServices">0</span></p>
+
+<input type="text" id="searchService" placeholder="Search Service">
+
+<br><p>Total Services: <span id="totalServices">0</span></p>
+
+<input type="text" id="searchService" placeholder="Search Service">
 
 <br><br>
 
@@ -98,6 +110,6 @@ Help and support services for customers.
 
 </section>
 
-
+<script src="../js/manage-services.js"></script>
 </body>
 </html>
