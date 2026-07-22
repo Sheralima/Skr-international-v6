@@ -1,1 +1,148 @@
+/* =====================================
+   SKR INTERNATIONAL - MESSAGES PAGE CSS
+===================================== */
 
+.messages-container{
+    padding:30px;
+}
+
+
+/* Heading */
+
+.messages-container h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+
+/* Message Box */
+
+.message-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+/* Single Message */
+
+.message-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border-bottom:1px solid #eee;
+    transition:.3s;
+}
+
+
+.message-card:hover{
+    background:#f8fafc;
+}
+
+
+/* User Image */
+
+.message-card img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+/* Message Content */
+
+.message-content h3{
+    font-size:16px;
+    color:#111827;
+}
+
+
+.message-content p{
+    color:#666;
+    font-size:14px;
+    margin-top:5px;
+}
+
+
+/* Time */
+
+.message-time{
+    margin-left:auto;
+    color:#888;
+    font-size:12px;
+}
+
+
+/* New Message */
+
+.unread{
+    background:#eff6ff;
+    border-left:4px solid #0d6efd;
+}
+
+
+/* Send Message Form */
+
+.send-message{
+    margin-top:25px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+.send-message input,
+.send-message textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+
+.send-message textarea{
+    height:120px;
+    resize:none;
+}
+
+
+/* Button */
+
+.message-btn{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+
+.message-btn:hover{
+    background:#084298;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.messages-container{
+    padding:15px;
+}
+
+.message-card{
+    align-items:flex-start;
+}
+
+.message-time{
+    display:none;
+}
+
+}
