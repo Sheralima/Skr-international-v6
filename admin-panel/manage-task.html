@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Manage Tasks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+
+<h2>Manage Tasks</h2>
+
+<h3>Add New Task</h3>
+
+<form>
+    <input type="text" placeholder="Task Title" required>
+    <input type="number" placeholder="Reward Amount" required>
+
+    <select required>
+        <option value="">Select Status</option>
+        <option>Active</option>
+        <option>Inactive</option>
+    </select>
+
+    <button type="submit">Add Task</button>
+</form>
+
+<br>
+
+<h3>Task List</h3>
+
+<table>
+<tr>
+    <th>ID</th>
+    <th>Task</th>
+    <th>Reward</th>
+    <th>Status</th>
+    <th>Action</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Visit Website</td>
+    <td>Rs.20</td>
+    <td>Active</td>
+    <td>
+        <button>Edit</button>
+        <button>Delete</button>
+    </td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Watch Video</td>
+    <td>Rs.30</td>
+    <td>Active</td>
+    <td>
+        <button>Edit</button>
+        <button>Delete</button>
+    </td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
