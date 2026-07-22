@@ -1,1 +1,164 @@
+/* =====================================
+   SKR INTERNATIONAL - DEPOSIT PAGE CSS
+===================================== */
 
+.deposit-container{
+    padding:30px;
+}
+
+
+/* Heading */
+
+.deposit-container h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+
+/* Deposit Box */
+
+.deposit-box{
+    background:white;
+    max-width:600px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+/* Balance Card */
+
+.balance-card{
+    background:#0d6efd;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+
+.balance-card h3{
+    font-size:18px;
+}
+
+
+.balance-card p{
+    font-size:30px;
+    font-weight:700;
+}
+
+
+/* Form */
+
+.deposit-form label{
+    display:block;
+    margin-top:15px;
+    font-weight:500;
+}
+
+
+.deposit-form input,
+.deposit-form select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+
+.deposit-form input:focus,
+.deposit-form select:focus{
+    border-color:#0d6efd;
+}
+
+
+/* Amount Options */
+
+.amount-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+
+.amount-buttons button{
+    background:#f1f5f9;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+
+.amount-buttons button:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+
+/* Submit Button */
+
+.deposit-btn{
+    width:100%;
+    margin-top:25px;
+    padding:13px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+.deposit-btn:hover{
+    background:#084298;
+}
+
+
+/* History Table */
+
+.deposit-history{
+    margin-top:30px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+
+.deposit-history table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+.deposit-history th{
+    background:#0d6efd;
+    color:white;
+    padding:12px;
+}
+
+
+.deposit-history td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.deposit-container{
+    padding:15px;
+}
+
+.deposit-box{
+    padding:20px;
+}
+
+}
