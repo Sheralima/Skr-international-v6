@@ -1,1 +1,145 @@
+/* =====================================
+   SKR INTERNATIONAL - ADMIN MESSAGES CSS
+===================================== */
 
+.admin-messages-container{
+    padding:30px;
+}
+
+
+/* Heading */
+
+.admin-messages-container h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+
+/* Messages Box */
+
+.admin-message-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+/* Message Card */
+
+.admin-message-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-bottom:1px solid #eee;
+    transition:.3s;
+}
+
+
+.admin-message-card:hover{
+    background:#f8fafc;
+}
+
+
+/* User Image */
+
+.admin-message-card img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+/* Message Details */
+
+.admin-message-content{
+    flex:1;
+}
+
+
+.admin-message-content h3{
+    color:#111827;
+    font-size:16px;
+}
+
+
+.admin-message-content p{
+    color:#666;
+    font-size:14px;
+    margin-top:5px;
+}
+
+
+/* Date */
+
+.message-date{
+    color:#888;
+    font-size:12px;
+}
+
+
+/* Unread Message */
+
+.new-message{
+    background:#eff6ff;
+    border-left:4px solid #0d6efd;
+}
+
+
+/* Reply Box */
+
+.reply-box{
+    margin-top:25px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+.reply-box textarea{
+    width:100%;
+    height:120px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    resize:none;
+}
+
+
+.reply-btn{
+    margin-top:15px;
+    background:#0d6efd;
+    color:white;
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+
+.reply-btn:hover{
+    background:#084298;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.admin-messages-container{
+    padding:15px;
+}
+
+.admin-message-card{
+    align-items:flex-start;
+    flex-direction:column;
+}
+
+.message-date{
+    display:none;
+}
+
+}
