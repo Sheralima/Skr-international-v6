@@ -1,1 +1,130 @@
+/* ==========================================
+   SKR INTERNATIONAL
+   Contact.css
+========================================== */
 
+/* Contact Section */
+.contact{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+/* Section Title */
+.contact-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.contact-title h5{
+    color:#0d6efd;
+    font-size:18px;
+    text-transform:uppercase;
+}
+
+.contact-title h2{
+    font-size:40px;
+    color:#212529;
+    margin-top:10px;
+}
+
+/* Contact Container */
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+/* Contact Info */
+.contact-info{
+    background:#ffffff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact-info h3{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:#6c757d;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+/* Contact Form */
+.contact-form{
+    background:#ffffff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    outline:none;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#0d6efd;
+}
+
+/* Button */
+.contact-form button{
+    width:100%;
+    padding:14px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#084298;
+}
+
+/* Google Map */
+.map{
+    margin-top:40px;
+}
+
+.map iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:12px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.contact{
+    padding:60px 15px;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.contact-title h2{
+    font-size:30px;
+}
+
+}
