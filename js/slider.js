@@ -1,31 +1,66 @@
-// ===========================
-// Auto Image Slider
-// ===========================
-console.log("Slider JS Loaded");
-const slides = documenconsole.log("Slider Loaded");t.querySelectorAll(".slide");
-let currentSlide = 0;
+// ==========================================
+// SKR INTERNATIONAL
+// Professional Slider
+// ==========================================
 
-function showSlide(index) {
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
+document.addEventListener("DOMContentLoaded", () => {
 
-    slides[index].classList.add("active");
-}
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
 
-if (slides.length > 0) {
+    let current = 0;
+    let autoSlide;
 
-    showSlide(currentSlide);
+    function showSlide(index) {
 
-    setInterval(() => {
-        currentSlide++;
+        slides.forEach(slide => {
+            slide.classList.remove("active");
+        });
 
-        if (currentSlide >= slides.length) {
-            currentSlide = 0;
+        slides[index].classList.add("active");
+    }
+
+    function nextSlide() {
+        current++;
+        if (current >= slides.length) {
+            current = 0;
         }
+        showSlide(current);
+    }
 
-        showSlide(currentSlide);
+    function prevSlide() {
+        current--;
+        if (current < 0) {
+            current = slides.length - 1;
+        }
+        showSlide(current);
+    }
 
-    }, 3000); // 3 seconds
+    function startSlider() {
+        autoSlide = setInterval(nextSlide, 3000);
+    }
 
-}
+    function resetSlider() {
+        clearInterval(autoSlide);
+        startSlider();
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+            nextSlide();
+            resetSlider();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+            prevSlide();
+            resetSlider();
+        });
+    }
+
+    showSlide(current);
+    startSlider();
+
+});
