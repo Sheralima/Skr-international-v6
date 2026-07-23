@@ -2,7 +2,7 @@
 // Auto Image Slider
 // ===========================
 
-const slides = document.querySelectorAll(".slide");
+const slides = documenconsole.log("Slider Loaded");t.querySelectorAll(".slide");
 let currentSlide = 0;
 
 function showSlide(index) {
