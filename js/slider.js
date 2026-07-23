@@ -1,7 +1,7 @@
 // ===========================
 // Auto Image Slider
 // ===========================
-
+console.log("Slider JS Loaded");
 const slides = documenconsole.log("Slider Loaded");t.querySelectorAll(".slide");
 let currentSlide = 0;
 
