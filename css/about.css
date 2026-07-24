@@ -1,1 +1,111 @@
+/* ==========================================
+   SKR INTERNATIONAL
+   About.css
+========================================== */
 
+/* About Section */
+.about{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.about .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+/* About Image */
+.about-image{
+    flex:1;
+    min-width:300px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+/* About Content */
+.about-content{
+    flex:1;
+    min-width:300px;
+}
+
+.about-content h5{
+    color:#0d6efd;
+    font-size:18px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.about-content h2{
+    font-size:40px;
+    color:#212529;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    font-size:17px;
+    color:#6c757d;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* About List */
+.about-list{
+    margin:25px 0;
+}
+
+.about-list li{
+    list-style:none;
+    margin-bottom:12px;
+    font-size:16px;
+    color:#333;
+}
+
+.about-list li::before{
+    content:"✔";
+    color:#198754;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+/* Button */
+.about-content .btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#0d6efd;
+    color:#fff;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.about-content .btn:hover{
+    background:#084298;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.about .container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-content h2{
+    font-size:30px;
+}
+
+.about-content p{
+    font-size:16px;
+}
+
+.about-list{
+    text-align:left;
+}
+
+}
