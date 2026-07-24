@@ -36,14 +36,14 @@ body{
 /* Container */
 .container{
     width:90%;
-    max-width:1200px;
+    max-width:500px;
     margin:auto;
 }
 
 /* Images */
 img{
     max-width:100%;
-    height:auto;
+    height:100%;
     display:block;
 }
 
