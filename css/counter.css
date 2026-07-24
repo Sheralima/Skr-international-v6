@@ -1,1 +1,66 @@
+/* ===========================
+   Counter Section
+=========================== */
 
+.counter-section{
+    width:100%;
+    padding:70px 20px;
+    background:#f8f9fa;
+}
+
+.counter-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.counter-box{
+    background:#fff;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.counter-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.counter-box h2{
+    font-size:42px;
+    color:#0d6efd;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.counter-box p{
+    font-size:18px;
+    color:#555;
+    font-weight:500;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.counter-section{
+    padding:50px 15px;
+}
+
+.counter-box{
+    padding:25px 15px;
+}
+
+.counter-box h2{
+    font-size:34px;
+}
+
+.counter-box p{
+    font-size:16px;
+}
+
+}
