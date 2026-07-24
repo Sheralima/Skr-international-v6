@@ -1,66 +1,62 @@
-// ==========================================
-// SKR INTERNATIONAL
-// Professional Slider
-// ==========================================
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
 
-document.addEventListener("DOMContentLoaded", () => {
+let current = 0;
 
-    const slides = document.querySelectorAll(".slide");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
+function showSlide(index){
 
-    let current = 0;
-    let autoSlide;
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
 
-    function showSlide(index) {
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+}
 
-        slides.forEach(slide => {
-            slide.classList.remove("active");
-        });
+next.addEventListener("click",()=>{
 
-        slides[index].classList.add("active");
-    }
+    current++;
 
-    function nextSlide() {
-        current++;
-        if (current >= slides.length) {
-            current = 0;
-        }
-        showSlide(current);
-    }
-
-    function prevSlide() {
-        current--;
-        if (current < 0) {
-            current = slides.length - 1;
-        }
-        showSlide(current);
-    }
-
-    function startSlider() {
-        autoSlide = setInterval(nextSlide, 3000);
-    }
-
-    function resetSlider() {
-        clearInterval(autoSlide);
-        startSlider();
-    }
-
-    if (nextBtn) {
-        nextBtn.addEventListener("click", () => {
-            nextSlide();
-            resetSlider();
-        });
-    }
-
-    if (prevBtn) {
-        prevBtn.addEventListener("click", () => {
-            prevSlide();
-            resetSlider();
-        });
+    if(current>=slides.length){
+        current=0;
     }
 
     showSlide(current);
-    startSlider();
 
 });
+
+prev.addEventListener("click",()=>{
+
+    current--;
+
+    if(current<0){
+        current=slides.length-1;
+    }
+
+    showSlide(current);
+
+});
+
+dots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        current=index;
+        showSlide(current);
+
+    });
+
+});
+
+setInterval(()=>{
+
+    current++;
+
+    if(current>=slides.length){
+        current=0;
+    }
+
+    showSlide(current);
+
+},5000);
